@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Data Collector App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Collecting heights</h1>
+            <h3>Please fill the entries to get population statistics on height</h3>
+            <div class="form">
+                <form action="{{url_for('success')}}" method="POST">
+                    <input title="Your email will be safe with us" 
+                    placeholder="Enter your email address" type="email" name="email_name" required> <br>
+                    <input title="Your email will be safe with us" 
+                    placeholder="Enter your height in cm" type="text" name="height_name" required> <br>
+                    <button class="go-button" type="submit">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+              
+    </body>
+</html>
